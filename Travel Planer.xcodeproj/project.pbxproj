@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		657D68F31B1E8FA20000C139 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657D68F21B1E8FA20000C139 /* AppDelegate.swift */; };
+		657D68F51B1E8FA20000C139 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657D68F41B1E8FA20000C139 /* ViewController.swift */; };
+		657D68F81B1E8FA20000C139 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657D68F61B1E8FA20000C139 /* Main.storyboard */; };
+		657D68FA1B1E8FA20000C139 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 657D68F91B1E8FA20000C139 /* Images.xcassets */; };
+		657D68FD1B1E8FA20000C139 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 657D68FB1B1E8FA20000C139 /* LaunchScreen.xib */; };
+		657D69091B1E8FA30000C139 /* Travel_PlanerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657D69081B1E8FA30000C139 /* Travel_PlanerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		657D69031B1E8FA30000C139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 657D68E51B1E8FA20000C139 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 657D68EC1B1E8FA20000C139;
+			remoteInfo = "Travel Planer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		657D68ED1B1E8FA20000C139 /* Travel Planer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Travel Planer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		657D68F11B1E8FA20000C139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		657D68F21B1E8FA20000C139 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		657D68F41B1E8FA20000C139 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		657D68F71B1E8FA20000C139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		657D68F91B1E8FA20000C139 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		657D68FC1B1E8FA20000C139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		657D69021B1E8FA30000C139 /* Travel PlanerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Travel PlanerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		657D69071B1E8FA30000C139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		657D69081B1E8FA30000C139 /* Travel_PlanerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travel_PlanerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		657D68EA1B1E8FA20000C139 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		657D68FF1B1E8FA30000C139 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		657D68E41B1E8FA20000C139 = {
+			isa = PBXGroup;
+			children = (
+				657D68EF1B1E8FA20000C139 /* Travel Planer */,
+				657D69051B1E8FA30000C139 /* Travel PlanerTests */,
+				657D68EE1B1E8FA20000C139 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		657D68EE1B1E8FA20000C139 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				657D68ED1B1E8FA20000C139 /* Travel Planer.app */,
+				657D69021B1E8FA30000C139 /* Travel PlanerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		657D68EF1B1E8FA20000C139 /* Travel Planer */ = {
+			isa = PBXGroup;
+			children = (
+				657D68F21B1E8FA20000C139 /* AppDelegate.swift */,
+				657D68F41B1E8FA20000C139 /* ViewController.swift */,
+				657D68F61B1E8FA20000C139 /* Main.storyboard */,
+				657D68F91B1E8FA20000C139 /* Images.xcassets */,
+				657D68FB1B1E8FA20000C139 /* LaunchScreen.xib */,
+				657D68F01B1E8FA20000C139 /* Supporting Files */,
+			);
+			path = "Travel Planer";
+			sourceTree = "<group>";
+		};
+		657D68F01B1E8FA20000C139 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				657D68F11B1E8FA20000C139 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		657D69051B1E8FA30000C139 /* Travel PlanerTests */ = {
+			isa = PBXGroup;
+			children = (
+				657D69081B1E8FA30000C139 /* Travel_PlanerTests.swift */,
+				657D69061B1E8FA30000C139 /* Supporting Files */,
+			);
+			path = "Travel PlanerTests";
+			sourceTree = "<group>";
+		};
+		657D69061B1E8FA30000C139 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				657D69071B1E8FA30000C139 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		657D68EC1B1E8FA20000C139 /* Travel Planer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 657D690C1B1E8FA30000C139 /* Build configuration list for PBXNativeTarget "Travel Planer" */;
+			buildPhases = (
+				657D68E91B1E8FA20000C139 /* Sources */,
+				657D68EA1B1E8FA20000C139 /* Frameworks */,
+				657D68EB1B1E8FA20000C139 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Travel Planer";
+			productName = "Travel Planer";
+			productReference = 657D68ED1B1E8FA20000C139 /* Travel Planer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		657D69011B1E8FA30000C139 /* Travel PlanerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 657D690F1B1E8FA30000C139 /* Build configuration list for PBXNativeTarget "Travel PlanerTests" */;
+			buildPhases = (
+				657D68FE1B1E8FA30000C139 /* Sources */,
+				657D68FF1B1E8FA30000C139 /* Frameworks */,
+				657D69001B1E8FA30000C139 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				657D69041B1E8FA30000C139 /* PBXTargetDependency */,
+			);
+			name = "Travel PlanerTests";
+			productName = "Travel PlanerTests";
+			productReference = 657D69021B1E8FA30000C139 /* Travel PlanerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		657D68E51B1E8FA20000C139 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = 01Logic;
+				TargetAttributes = {
+					657D68EC1B1E8FA20000C139 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					657D69011B1E8FA30000C139 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 657D68EC1B1E8FA20000C139;
+					};
+				};
+			};
+			buildConfigurationList = 657D68E81B1E8FA20000C139 /* Build configuration list for PBXProject "Travel Planer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 657D68E41B1E8FA20000C139;
+			productRefGroup = 657D68EE1B1E8FA20000C139 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				657D68EC1B1E8FA20000C139 /* Travel Planer */,
+				657D69011B1E8FA30000C139 /* Travel PlanerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		657D68EB1B1E8FA20000C139 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				657D68F81B1E8FA20000C139 /* Main.storyboard in Resources */,
+				657D68FD1B1E8FA20000C139 /* LaunchScreen.xib in Resources */,
+				657D68FA1B1E8FA20000C139 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		657D69001B1E8FA30000C139 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		657D68E91B1E8FA20000C139 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				657D68F51B1E8FA20000C139 /* ViewController.swift in Sources */,
+				657D68F31B1E8FA20000C139 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		657D68FE1B1E8FA30000C139 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				657D69091B1E8FA30000C139 /* Travel_PlanerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		657D69041B1E8FA30000C139 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 657D68EC1B1E8FA20000C139 /* Travel Planer */;
+			targetProxy = 657D69031B1E8FA30000C139 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		657D68F61B1E8FA20000C139 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				657D68F71B1E8FA20000C139 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		657D68FB1B1E8FA20000C139 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				657D68FC1B1E8FA20000C139 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		657D690A1B1E8FA30000C139 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		657D690B1B1E8FA30000C139 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		657D690D1B1E8FA30000C139 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Travel Planer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		657D690E1B1E8FA30000C139 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Travel Planer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		657D69101B1E8FA30000C139 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Travel PlanerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Travel Planer.app/Travel Planer";
+			};
+			name = Debug;
+		};
+		657D69111B1E8FA30000C139 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Travel PlanerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Travel Planer.app/Travel Planer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		657D68E81B1E8FA20000C139 /* Build configuration list for PBXProject "Travel Planer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				657D690A1B1E8FA30000C139 /* Debug */,
+				657D690B1B1E8FA30000C139 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		657D690C1B1E8FA30000C139 /* Build configuration list for PBXNativeTarget "Travel Planer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				657D690D1B1E8FA30000C139 /* Debug */,
+				657D690E1B1E8FA30000C139 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		657D690F1B1E8FA30000C139 /* Build configuration list for PBXNativeTarget "Travel PlanerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				657D69101B1E8FA30000C139 /* Debug */,
+				657D69111B1E8FA30000C139 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 657D68E51B1E8FA20000C139 /* Project object */;
+}
