@@ -7,12 +7,29 @@
 //
 
 import UIKit
+import Parse
 
 class ViewController: UIViewController {
+
+	var vc = LogInViewController()
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
+
+		//test parse
+//		let testObject = PFObject(className: "TestObject")
+//		testObject["foo"] = "Teraaa"
+//		testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+//			println("Object has been saved.")
+//		}
+
+
+	}
+
+	override func viewDidAppear(animated: Bool) {
+		//self.presentViewController(vc, animated: true, completion: nil)
+		var window = UIWindow.mai
 	}
 
 	override func didReceiveMemoryWarning() {
