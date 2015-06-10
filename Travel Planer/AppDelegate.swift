@@ -7,14 +7,28 @@
 //
 
 import UIKit
+import Parse
+import Bolts
+import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
 
+	
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+
+		// Parse setup
+		Parse.enableLocalDatastore()
+
+		Parse.setApplicationId("f9bdwsZSlu7kK9FL8jKHVAF5xRGv0MddhHHeTymt",
+			clientKey: "dIauWIdfExq9NZhcVJoDBhZZbYGvsEu2yCrYySSw")
+
+		// Crashlytics setup
+		Crashlytics.startWithAPIKey("9f18d825f4d4e77735b5bc9e3bed78959c905ec4")
+
 		// Override point for customization after application launch.
 		return true
 	}

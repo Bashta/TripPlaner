@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+struct User {
+
+	var name : String = ""
+	var location : String = ""
+	var gender : String = ""
+	var isFacebookUser : Bool = false
+	var imgUrl : NSURL? = nil
+
+}

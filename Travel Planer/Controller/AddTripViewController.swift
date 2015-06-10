@@ -7,29 +7,77 @@
 //
 
 import UIKit
+import Parse
 
 class AddTripViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+	var trip: Trip = Trip()
 
-        // Do any additional setup after loading the view.
-    }
+	@IBOutlet weak var destinationTextField: UITextField!
+	@IBOutlet weak var startDateTextFiled: UITextField!
+	@IBOutlet weak var endDateTextField: UITextField!
+	@IBOutlet weak var descriptionTextView: UITextView!
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+	let dateFormat: NSDateFormatter = NSDateFormatter()
+	let datePicker: UIDatePicker = UIDatePicker()
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+	override func viewDidLoad() {
 
+		dateFormat.dateStyle = NSDateFormatterStyle.ShortStyle
+		datePicker.datePickerMode = UIDatePickerMode.Date
+
+		datePicker.addTarget(self, action: Selector("updateDateField:"), forControlEvents: UIControlEvents.ValueChanged)
+
+		startDateTextFiled.inputView = datePicker
+		endDateTextField.inputView = datePicker
+	}
+
+	@IBAction func saveTrip(sender: UIBarButtonItem) {
+
+		if(!destinationTextField.text.isEmpty && !startDateTextFiled.text.isEmpty && !endDateTextField.text.isEmpty && !descriptionTextView.text.isEmpty) {
+
+			trip.user = PFUser.currentUser()!.username!
+			trip.destination = destinationTextField.text
+			trip.startDate = startDateTextFiled.text
+			trip.endDate = endDateTextField.text
+			trip.comment = descriptionTextView.text
+
+			self.performSegueWithIdentifier("unwind", sender: self)
+
+		} else {
+
+			let alertView = UIAlertView(title: "Incloplete Information", message: "Please fill in all the fileds", delegate: self, cancelButtonTitle: "Ok")
+			alertView.alertViewStyle = UIAlertViewStyle.Default
+			alertView.show()
+		}
+	}
+
+	//Selector method calld by the datepicker
+	func updateDateField(sender: UIDatePicker) {
+
+		//set the date to the textfield
+		if (startDateTextFiled.isFirstResponder()) {
+
+			startDateTextFiled.text = dateFormat.stringFromDate(sender.date)
+
+		} else {
+
+			endDateTextField.text = dateFormat.stringFromDate(sender.date)
+
+		}
+
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+

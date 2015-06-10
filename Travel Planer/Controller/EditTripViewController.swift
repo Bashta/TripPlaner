@@ -7,29 +7,78 @@
 //
 
 import UIKit
+import Parse
 
 class EditTripViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+	var trip: Trip!
 
-        // Do any additional setup after loading the view.
-    }
+	@IBOutlet weak var destinationTextField: UITextField!
+	@IBOutlet weak var startDateTextFiled: UITextField!
+	@IBOutlet weak var endDateTextField: UITextField!
+	@IBOutlet weak var descriptionTextView: UITextView!
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+	let dateFormat: NSDateFormatter = NSDateFormatter()
+	let datePicker: UIDatePicker = UIDatePicker()
 
-    /*
-    // MARK: - Navigation
+	override func viewDidLoad() {
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+		dateFormat.dateStyle = NSDateFormatterStyle.ShortStyle
+		datePicker.datePickerMode = UIDatePickerMode.Date
 
+		datePicker.addTarget(self, action: Selector("updateDateField:"), forControlEvents: UIControlEvents.ValueChanged)
+
+		startDateTextFiled.inputView = datePicker
+		endDateTextField.inputView = datePicker
+
+	}
+
+
+
+	override func viewWillAppear(animated: Bool) {
+
+		destinationTextField.text = trip.destination
+		startDateTextFiled.text = trip.startDate
+		endDateTextField.text = trip.endDate
+		descriptionTextView.text = trip.comment
+
+	}
+
+	@IBAction func saveTrip(sender: UIBarButtonItem) {
+
+		if(!destinationTextField.text.isEmpty && !startDateTextFiled.text.isEmpty && !endDateTextField.text.isEmpty && !descriptionTextView.text.isEmpty) {
+
+			var query = PFQuery(className:"Posts"); println(trip.objectID)
+			query.getObjectInBackgroundWithId(trip.objectID) { (editPost: PFObject?, error: NSError?) -> Void in
+
+				if (error == nil) {
+
+					self.trip.destination = self.destinationTextField.text
+					self.trip.startDate = self.startDateTextFiled.text
+					self.trip.endDate = self.endDateTextField.text
+					self.trip.comment = self.descriptionTextView.text
+
+					self.performSegueWithIdentifier("unwindEdit", sender: self)
+
+				}
+			}
+		}
+	}
+
+	//Selector method calld by the datepicker
+	func updateDateField(sender: UIDatePicker) {
+
+		//set the date to the textfield
+		if (startDateTextFiled.isFirstResponder()) {
+
+			startDateTextFiled.text = dateFormat.stringFromDate(sender.date)
+
+		} else {
+
+			endDateTextField.text = dateFormat.stringFromDate(sender.date)
+			
+		}
+		
+	}
+	
 }

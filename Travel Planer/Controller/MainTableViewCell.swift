@@ -10,6 +10,15 @@ import UIKit
 
 class MainTableViewCell: UITableViewCell {
 
+
+	@IBOutlet weak var destinationLabel: UILabel!
+	@IBOutlet weak var stardDateLabel: UILabel!
+	@IBOutlet weak var endDateLabel: UILabel!
+	@IBOutlet weak var descriptionTextView: UITextView!
+	@IBOutlet weak var daysToStartLabel: UILabel!
+	@IBOutlet weak var daysLabel: UILabel!
+
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +30,5 @@ class MainTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+	
 }

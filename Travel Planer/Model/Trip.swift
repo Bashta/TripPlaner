@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+struct Trip {
+
+	var destination: String = ""
+	var user: String = ""
+	var comment: String = ""
+	var startDate: String = ""
+	var endDate: String = ""
+	var objectID: String = ""
+
+}

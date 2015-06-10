@@ -7,12 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650172501B20D5B900B4A5C0 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6501724F1B20D5B900B4A5C0 /* Crashlytics.framework */; };
+		6501725A1B217F0D00B4A5C0 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650172591B217F0D00B4A5C0 /* MainTableViewCell.swift */; };
+		6501725C1B21C5D000B4A5C0 /* AddTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6501725B1B21C5D000B4A5C0 /* AddTripViewController.swift */; };
+		6512838F1B21D3B2001100A5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6512838D1B21D3B2001100A5 /* Bolts.framework */; };
+		651283901B21D3B2001100A5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6512838E1B21D3B2001100A5 /* Parse.framework */; };
+		657A5B3B1B276AD300387574 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657A5B3A1B276AD300387574 /* SignUpViewController.swift */; };
 		657D68F31B1E8FA20000C139 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657D68F21B1E8FA20000C139 /* AppDelegate.swift */; };
-		657D68F51B1E8FA20000C139 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657D68F41B1E8FA20000C139 /* ViewController.swift */; };
 		657D68F81B1E8FA20000C139 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657D68F61B1E8FA20000C139 /* Main.storyboard */; };
 		657D68FA1B1E8FA20000C139 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 657D68F91B1E8FA20000C139 /* Images.xcassets */; };
 		657D68FD1B1E8FA20000C139 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 657D68FB1B1E8FA20000C139 /* LaunchScreen.xib */; };
 		657D69091B1E8FA30000C139 /* Travel_PlanerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657D69081B1E8FA30000C139 /* Travel_PlanerTests.swift */; };
+		657D691B1B1E90AF0000C139 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657D691A1B1E90AF0000C139 /* AudioToolbox.framework */; };
+		657D691D1B1E90B60000C139 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657D691C1B1E90B60000C139 /* CFNetwork.framework */; };
+		657D691F1B1E90BF0000C139 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657D691E1B1E90BF0000C139 /* CoreGraphics.framework */; };
+		657D69211B1E90CC0000C139 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657D69201B1E90CC0000C139 /* CoreLocation.framework */; };
+		657D69231B1E90D60000C139 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657D69221B1E90D60000C139 /* MobileCoreServices.framework */; };
+		657D69251B1E90E70000C139 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657D69241B1E90E70000C139 /* QuartzCore.framework */; };
+		657D69271B1E90F70000C139 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657D69261B1E90F70000C139 /* Security.framework */; };
+		657D69291B1E90FF0000C139 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657D69281B1E90FF0000C139 /* StoreKit.framework */; };
+		657D692B1B1E91080000C139 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657D692A1B1E91080000C139 /* SystemConfiguration.framework */; };
+		657D692D1B1E91120000C139 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 657D692C1B1E91120000C139 /* libz.dylib */; };
+		657D692F1B1E91210000C139 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 657D692E1B1E91210000C139 /* libsqlite3.dylib */; };
+		657D69341B1EC65C0000C139 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657D69331B1EC65C0000C139 /* User.swift */; };
+		657D69361B1EC6A10000C139 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657D69351B1EC6A10000C139 /* Trip.swift */; };
+		657D69381B1ECA180000C139 /* LogInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 657D69371B1ECA180000C139 /* LogInView.xib */; };
+		657D693A1B1EE1950000C139 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657D69391B1EE1950000C139 /* LogInViewController.swift */; };
+		657D693C1B1EEFA90000C139 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657D693B1B1EEFA90000C139 /* ViewController.swift */; };
+		657D69411B1EF5470000C139 /* UIViewController+MaryPopin.m in Sources */ = {isa = PBXBuildFile; fileRef = 657D69401B1EF5470000C139 /* UIViewController+MaryPopin.m */; };
+		65C6481E1B20751F009B539F /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65C6481D1B20751F009B539F /* SignUpView.xib */; };
+		65C648241B2078C4009B539F /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C648231B2078C4009B539F /* Crashlytics.framework */; };
+		65E2D26C1B263FB200225022 /* EditTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E2D26B1B263FB200225022 /* EditTripViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +51,43 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6501724F1B20D5B900B4A5C0 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
+		650172591B217F0D00B4A5C0 /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTableViewCell.swift; path = Controller/MainTableViewCell.swift; sourceTree = "<group>"; };
+		6501725B1B21C5D000B4A5C0 /* AddTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddTripViewController.swift; path = Controller/AddTripViewController.swift; sourceTree = "<group>"; };
+		6512838D1B21D3B2001100A5 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Frameworks/Bolts.framework; sourceTree = "<group>"; };
+		6512838E1B21D3B2001100A5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Frameworks/Parse.framework; sourceTree = "<group>"; };
+		657A5B3A1B276AD300387574 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = Controller/SignUpViewController.swift; sourceTree = "<group>"; };
 		657D68ED1B1E8FA20000C139 /* Travel Planer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Travel Planer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		657D68F11B1E8FA20000C139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		657D68F21B1E8FA20000C139 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		657D68F41B1E8FA20000C139 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		657D68F71B1E8FA20000C139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		657D68F91B1E8FA20000C139 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		657D68FC1B1E8FA20000C139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		657D69021B1E8FA30000C139 /* Travel PlanerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Travel PlanerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		657D69071B1E8FA30000C139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		657D69081B1E8FA30000C139 /* Travel_PlanerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travel_PlanerTests.swift; sourceTree = "<group>"; };
+		657D691A1B1E90AF0000C139 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		657D691C1B1E90B60000C139 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		657D691E1B1E90BF0000C139 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		657D69201B1E90CC0000C139 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		657D69221B1E90D60000C139 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		657D69241B1E90E70000C139 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		657D69261B1E90F70000C139 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		657D69281B1E90FF0000C139 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		657D692A1B1E91080000C139 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		657D692C1B1E91120000C139 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		657D692E1B1E91210000C139 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		657D69331B1EC65C0000C139 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = "<group>"; };
+		657D69351B1EC6A10000C139 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Trip.swift; path = Model/Trip.swift; sourceTree = "<group>"; };
+		657D69371B1ECA180000C139 /* LogInView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LogInView.xib; path = View/LogInView.xib; sourceTree = "<group>"; };
+		657D69391B1EE1950000C139 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogInViewController.swift; path = Controller/LogInViewController.swift; sourceTree = "<group>"; };
+		657D693B1B1EEFA90000C139 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		657D693E1B1EF5460000C139 /* Travel Planer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Travel Planer-Bridging-Header.h"; sourceTree = "<group>"; };
+		657D693F1B1EF5470000C139 /* UIViewController+MaryPopin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MaryPopin.h"; sourceTree = "<group>"; };
+		657D69401B1EF5470000C139 /* UIViewController+MaryPopin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MaryPopin.m"; sourceTree = "<group>"; };
+		65C6481D1B20751F009B539F /* SignUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
+		65C648231B2078C4009B539F /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Frameworks/Crashlytics.framework; sourceTree = "<group>"; };
+		65E2D26B1B263FB200225022 /* EditTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditTripViewController.swift; path = Controller/EditTripViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +95,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6512838F1B21D3B2001100A5 /* Bolts.framework in Frameworks */,
+				651283901B21D3B2001100A5 /* Parse.framework in Frameworks */,
+				650172501B20D5B900B4A5C0 /* Crashlytics.framework in Frameworks */,
+				65C648241B2078C4009B539F /* Crashlytics.framework in Frameworks */,
+				657D692B1B1E91080000C139 /* SystemConfiguration.framework in Frameworks */,
+				657D69291B1E90FF0000C139 /* StoreKit.framework in Frameworks */,
+				657D69271B1E90F70000C139 /* Security.framework in Frameworks */,
+				657D69251B1E90E70000C139 /* QuartzCore.framework in Frameworks */,
+				657D69231B1E90D60000C139 /* MobileCoreServices.framework in Frameworks */,
+				657D69211B1E90CC0000C139 /* CoreLocation.framework in Frameworks */,
+				657D691F1B1E90BF0000C139 /* CoreGraphics.framework in Frameworks */,
+				657D691D1B1E90B60000C139 /* CFNetwork.framework in Frameworks */,
+				657D691B1B1E90AF0000C139 /* AudioToolbox.framework in Frameworks */,
+				657D692D1B1E91120000C139 /* libz.dylib in Frameworks */,
+				657D692F1B1E91210000C139 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +129,7 @@
 				657D68EF1B1E8FA20000C139 /* Travel Planer */,
 				657D69051B1E8FA30000C139 /* Travel PlanerTests */,
 				657D68EE1B1E8FA20000C139 /* Products */,
+				657D69121B1E8FAE0000C139 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,10 +146,10 @@
 			isa = PBXGroup;
 			children = (
 				657D68F21B1E8FA20000C139 /* AppDelegate.swift */,
-				657D68F41B1E8FA20000C139 /* ViewController.swift */,
-				657D68F61B1E8FA20000C139 /* Main.storyboard */,
+				657D69131B1E8FCA0000C139 /* Model */,
+				657D69141B1E8FD20000C139 /* View */,
+				657D69151B1E8FE00000C139 /* Controller */,
 				657D68F91B1E8FA20000C139 /* Images.xcassets */,
-				657D68FB1B1E8FA20000C139 /* LaunchScreen.xib */,
 				657D68F01B1E8FA20000C139 /* Supporting Files */,
 			);
 			path = "Travel Planer";
@@ -90,6 +158,7 @@
 		657D68F01B1E8FA20000C139 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				657D693E1B1EF5460000C139 /* Travel Planer-Bridging-Header.h */,
 				657D68F11B1E8FA20000C139 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -112,6 +181,72 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		657D69121B1E8FAE0000C139 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6512838D1B21D3B2001100A5 /* Bolts.framework */,
+				6512838E1B21D3B2001100A5 /* Parse.framework */,
+				6501724F1B20D5B900B4A5C0 /* Crashlytics.framework */,
+				657D693D1B1EF52F0000C139 /* MaryPopin */,
+				65C648231B2078C4009B539F /* Crashlytics.framework */,
+				657D692E1B1E91210000C139 /* libsqlite3.dylib */,
+				657D692C1B1E91120000C139 /* libz.dylib */,
+				657D692A1B1E91080000C139 /* SystemConfiguration.framework */,
+				657D69281B1E90FF0000C139 /* StoreKit.framework */,
+				657D69261B1E90F70000C139 /* Security.framework */,
+				657D69241B1E90E70000C139 /* QuartzCore.framework */,
+				657D69221B1E90D60000C139 /* MobileCoreServices.framework */,
+				657D69201B1E90CC0000C139 /* CoreLocation.framework */,
+				657D691E1B1E90BF0000C139 /* CoreGraphics.framework */,
+				657D691C1B1E90B60000C139 /* CFNetwork.framework */,
+				657D691A1B1E90AF0000C139 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			path = "Travel Planer";
+			sourceTree = "<group>";
+		};
+		657D69131B1E8FCA0000C139 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				657D69331B1EC65C0000C139 /* User.swift */,
+				657D69351B1EC6A10000C139 /* Trip.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		657D69141B1E8FD20000C139 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				657D68F61B1E8FA20000C139 /* Main.storyboard */,
+				657D68FB1B1E8FA20000C139 /* LaunchScreen.xib */,
+				657D69371B1ECA180000C139 /* LogInView.xib */,
+				65C6481D1B20751F009B539F /* SignUpView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		657D69151B1E8FE00000C139 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				657D693B1B1EEFA90000C139 /* ViewController.swift */,
+				6501725B1B21C5D000B4A5C0 /* AddTripViewController.swift */,
+				65E2D26B1B263FB200225022 /* EditTripViewController.swift */,
+				650172591B217F0D00B4A5C0 /* MainTableViewCell.swift */,
+				657D69391B1EE1950000C139 /* LogInViewController.swift */,
+				657A5B3A1B276AD300387574 /* SignUpViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		657D693D1B1EF52F0000C139 /* MaryPopin */ = {
+			isa = PBXGroup;
+			children = (
+				657D693F1B1EF5470000C139 /* UIViewController+MaryPopin.h */,
+				657D69401B1EF5470000C139 /* UIViewController+MaryPopin.m */,
+			);
+			name = MaryPopin;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,6 +257,7 @@
 				657D68E91B1E8FA20000C139 /* Sources */,
 				657D68EA1B1E8FA20000C139 /* Frameworks */,
 				657D68EB1B1E8FA20000C139 /* Resources */,
+				657D69301B1E978C0000C139 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -194,6 +330,8 @@
 			files = (
 				657D68F81B1E8FA20000C139 /* Main.storyboard in Resources */,
 				657D68FD1B1E8FA20000C139 /* LaunchScreen.xib in Resources */,
+				657D69381B1ECA180000C139 /* LogInView.xib in Resources */,
+				65C6481E1B20751F009B539F /* SignUpView.xib in Resources */,
 				657D68FA1B1E8FA20000C139 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,12 +345,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		657D69301B1E978C0000C139 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run 9f18d825f4d4e77735b5bc9e3bed78959c905ec4 67479f1753bc429107cdd6a2bc0e5b982b6d5eb0834833cf08e30e33e4c684dd";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		657D68E91B1E8FA20000C139 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				657D68F51B1E8FA20000C139 /* ViewController.swift in Sources */,
+				657D693C1B1EEFA90000C139 /* ViewController.swift in Sources */,
+				6501725A1B217F0D00B4A5C0 /* MainTableViewCell.swift in Sources */,
+				657D693A1B1EE1950000C139 /* LogInViewController.swift in Sources */,
+				657D69361B1EC6A10000C139 /* Trip.swift in Sources */,
+				657A5B3B1B276AD300387574 /* SignUpViewController.swift in Sources */,
+				65E2D26C1B263FB200225022 /* EditTripViewController.swift in Sources */,
+				6501725C1B21C5D000B4A5C0 /* AddTripViewController.swift in Sources */,
+				657D69341B1EC65C0000C139 /* User.swift in Sources */,
+				657D69411B1EF5470000C139 /* UIViewController+MaryPopin.m in Sources */,
 				657D68F31B1E8FA20000C139 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +453,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -329,6 +495,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -339,20 +509,43 @@
 		657D690D1B1E8FA30000C139 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Travel",
+					"$(SRCROOT)/**",
+					"Planer/Frameworks/**",
+					"$(PROJECT_DIR)/Travel/**",
+					"Planer/Frameworks/**",
+				);
 				INFOPLIST_FILE = "Travel Planer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Travel Planer/Travel Planer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		657D690E1B1E8FA30000C139 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Travel",
+					"$(SRCROOT)/**",
+					"Planer/Frameworks/**",
+					"$(PROJECT_DIR)/Travel/**",
+					"Planer/Frameworks/**",
+				);
 				INFOPLIST_FILE = "Travel Planer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Travel Planer/Travel Planer-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +602,7 @@
 				657D690E1B1E8FA30000C139 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		657D690F1B1E8FA30000C139 /* Build configuration list for PBXNativeTarget "Travel PlanerTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +611,7 @@
 				657D69111B1E8FA30000C139 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
