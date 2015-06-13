@@ -11,32 +11,41 @@ import Parse
 
 class EditTripViewController: UIViewController {
 
-	var trip: Trip!
+	// MARK: Properties
 
+	// Trip object used to save the Trip to be added by the user
+	var trip: Trip = Trip()
+
+	// Input fields for the user
 	@IBOutlet weak var destinationTextField: UITextField!
 	@IBOutlet weak var startDateTextFiled: UITextField!
 	@IBOutlet weak var endDateTextField: UITextField!
 	@IBOutlet weak var descriptionTextView: UITextView!
 
+	// Date handling properties
 	let dateFormat: NSDateFormatter = NSDateFormatter()
 	let datePicker: UIDatePicker = UIDatePicker()
 
+	// MARK: Methods
+
 	override func viewDidLoad() {
 
+		// Date format and date picker setup
 		dateFormat.dateStyle = NSDateFormatterStyle.ShortStyle
 		datePicker.datePickerMode = UIDatePickerMode.Date
 
+		// Add the event for the datepicker when the value is changed
 		datePicker.addTarget(self, action: Selector("updateDateField:"), forControlEvents: UIControlEvents.ValueChanged)
 
+		// Add the date picker as input view to the date text fields
 		startDateTextFiled.inputView = datePicker
 		endDateTextField.inputView = datePicker
 
 	}
 
-
-
 	override func viewWillAppear(animated: Bool) {
 
+		// Populate the input fields with values from the selected row.
 		destinationTextField.text = trip.destination
 		startDateTextFiled.text = trip.startDate
 		endDateTextField.text = trip.endDate
@@ -48,7 +57,8 @@ class EditTripViewController: UIViewController {
 
 		if(!destinationTextField.text.isEmpty && !startDateTextFiled.text.isEmpty && !endDateTextField.text.isEmpty && !descriptionTextView.text.isEmpty) {
 
-			var query = PFQuery(className:"Posts"); println(trip.objectID)
+			// Querry the Posts table for our object and updating it
+			var query = PFQuery(className:"Posts")
 			query.getObjectInBackgroundWithId(trip.objectID) { (editPost: PFObject?, error: NSError?) -> Void in
 
 				if (error == nil) {
@@ -60,15 +70,23 @@ class EditTripViewController: UIViewController {
 
 					self.performSegueWithIdentifier("unwindEdit", sender: self)
 
+				} else {
+
+					//Report the user that an error has occured
+					var errorMessage = error!.userInfo!["error"] as! String
+					let alertView = UIAlertView(title: "Error", message: errorMessage, delegate: self, cancelButtonTitle: "Ok")
+					alertView.alertViewStyle = UIAlertViewStyle.Default
+					alertView.show()
+
 				}
 			}
 		}
 	}
 
-	//Selector method calld by the datepicker
+	// Selector method calld by the datepicker
 	func updateDateField(sender: UIDatePicker) {
 
-		//set the date to the textfield
+		// Set the date to the textfield
 		if (startDateTextFiled.isFirstResponder()) {
 
 			startDateTextFiled.text = dateFormat.stringFromDate(sender.date)
@@ -78,7 +96,6 @@ class EditTripViewController: UIViewController {
 			endDateTextField.text = dateFormat.stringFromDate(sender.date)
 			
 		}
-		
 	}
 	
 }

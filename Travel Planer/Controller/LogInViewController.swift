@@ -50,18 +50,18 @@ class LogInViewController: UIViewController {
 			return
 		}
 
-		//Try to log in the user with the given credentials
+		// Try to log in the user with the given credentials
 		PFUser.logInWithUsernameInBackground(userNameTextField.text, password: userPasswordTextField.text, block: { (success, error) -> Void in
 
 			if error != nil {
 
-				//handle error
+				// Handle error
 				let errorMessage = error!.userInfo!["error"] as! String
 				self.statusLabel.text = errorMessage
 
 			} else {
 
-				//succsess, let the user in
+				// Succsess, let the user in
 				if self.delegate != nil {
 					self.delegate!.onLogInButtonPressed(self)
 				}

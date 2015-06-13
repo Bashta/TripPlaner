@@ -9,6 +9,17 @@
 import UIKit
 import Parse
 
+// TODO:
+//  1 - Refactor the date handling process inside the the Trip object (Add/EditVC Trip clases)
+//  2 - For every object create its own table which name corresponds to the user name since it is unique. This way the querry process should be way more efficent.
+//  3 - Bug #1
+//  4 - Implement pods where possible
+//  5 - Implement the User struct 
+//  6 - Move the extensions in a proper place
+//  7 - Implement a filter
+//  8 - Iplement Facebook log in 
+//  9 - Unit Tests
+
 // MARK: - Class
 class ViewController: UITableViewController, LogInViewControllerDelegate, SignUpViewControllerDelegate {
 
@@ -25,11 +36,6 @@ class ViewController: UITableViewController, LogInViewControllerDelegate, SignUp
 
 	//NSCaledear
 	var calendar: NSCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
-
-	override func viewDidLoad() {
-
-		super.viewDidLoad()
-	}
 
 	override func viewDidAppear(animated: Bool) {
 
@@ -169,87 +175,6 @@ class ViewController: UITableViewController, LogInViewControllerDelegate, SignUp
 
 	}
 
-	// MARK: - Table View DataSource Methods
-
-	override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-
-		return 1
-
-	}
-
-	override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
-		return self.tripObjects.count
-
-	}
-
-	override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-
-		let cell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! MainTableViewCell
-
-		//Date setup to manage the day ledt label
-		let calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
-
-		let dateFormatter = NSDateFormatter()
-		dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
-
-		let now = NSDate()
-		let startDate = dateFormatter.dateFromString(tripObjects[indexPath.row].startDate)
-
-		//Set the hour to 00:00 in order to get the days difference, otherwise a 23 hours dif its considered 0 days. ( a more human way of thinking about days than machines :P )
-		let date1 = calendar!.startOfDayForDate(now)
-		let date2 = calendar!.startOfDayForDate(startDate!)
-
-		let flags = NSCalendarUnit.CalendarUnitDay
-		let daysDiference = calendar!.components(flags, fromDate: date1, toDate: date2, options: nil)
-
-		//Show days to trips in case there is a diff, else hide them 
-		if (daysDiference.day > 0) {
-
-			cell.daysLabel.text = String(daysDiference.day)
-
-		} else {
-
-			cell.daysLabel.hidden = true
-			cell.daysToStartLabel.hidden = true
-		}
-
-		// Update the Cells
-			cell.descriptionTextView.text = tripObjects[indexPath.row].comment
-			cell.stardDateLabel.text = tripObjects[indexPath.row].startDate
-			cell.endDateLabel.text = tripObjects[indexPath.row].endDate
-			cell.destinationLabel.text = tripObjects[indexPath.row].destination
-
-      return cell
-
-	}
-
-	override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-
-		//Implement the delete func from the row
-		switch editingStyle {
-
-		case .Delete:
-
-			//Remove the object from the model,remove the the view, remove form the parse databese
-			self.deleteobjectFromDatabase(tripObjects[indexPath.row].objectID)
-			self.tripObjects.removeAtIndex(indexPath.row)
-			self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
-
-		default:
-			return
-		}
-
-	}
-
-	override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-
-		//Set the editTrip property to be passed to the EditTripViewController for editing
-		editTrip = Trip()
-		editTrip = tripObjects[indexPath.row]
-		performSegueWithIdentifier("ToEditTrip", sender: self)
-
-	}
 	/*
 	Using Unwind Segues
 	Unwind segues give you a way to "unwind" the navigation stack back through push, modal, popover, and other types of segues. You use unwind segues to "go back" one or more steps in your navigation hierarchy. Unlike a normal segue, which create a new instance of their destination view controller and transitions to it, an unwind segue transitions to an existing view controller in your navigation hierarchy. Callbacks are provided to both the source and destination view controller before the transition begins. You can use these callbacks to pass data between the view controllers.
@@ -388,12 +313,88 @@ class ViewController: UITableViewController, LogInViewControllerDelegate, SignUp
 		}
 	}
 
-	func checkDate() {
+	// MARK: - Table View DataSource Methods
 
-		let now = NSDate()
+	override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
 
+		return 1
 
 	}
+
+	override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+		return self.tripObjects.count
+
+	}
+
+	override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+
+		let cell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! MainTableViewCell
+
+		//Date setup to manage the day ledt label
+		let calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
+
+		let dateFormatter = NSDateFormatter()
+		dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
+
+		let now = NSDate()
+		let startDate = dateFormatter.dateFromString(tripObjects[indexPath.row].startDate)
+
+		//Set the hour to 00:00 in order to get the days difference, otherwise a 23 hours dif its considered 0 days. ( a more human way of thinking about days than machines :P )
+		let date1 = calendar!.startOfDayForDate(now)
+		let date2 = calendar!.startOfDayForDate(startDate!)
+
+		let flags = NSCalendarUnit.CalendarUnitDay
+		let daysDiference = calendar!.components(flags, fromDate: date1, toDate: date2, options: nil)
+
+		//Show days to trips in case there is a diff, else hide them
+		if (daysDiference.day > 0) {
+
+			cell.daysLabel.text = String(daysDiference.day)
+
+		} else {
+
+			cell.daysLabel.hidden = true
+			cell.daysToStartLabel.hidden = true
+		}
+
+		// Update the Cells
+		cell.descriptionTextView.text = tripObjects[indexPath.row].comment
+		cell.stardDateLabel.text = tripObjects[indexPath.row].startDate
+		cell.endDateLabel.text = tripObjects[indexPath.row].endDate
+		cell.destinationLabel.text = tripObjects[indexPath.row].destination
+
+		return cell
+
+	}
+
+	override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+
+		//Implement the delete func from the row
+		switch editingStyle {
+
+		case .Delete:
+
+			//Remove the object from the model,remove the the view, remove form the parse databese
+			self.deleteobjectFromDatabase(tripObjects[indexPath.row].objectID)
+			self.tripObjects.removeAtIndex(indexPath.row)
+			self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+
+		default:
+			return
+		}
+
+	}
+
+	override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+		
+		//Set the editTrip property to be passed to the EditTripViewController for editing
+		editTrip = Trip()
+		editTrip = tripObjects[indexPath.row]
+		performSegueWithIdentifier("ToEditTrip", sender: self)
+		
+	}
+	
 }
 
 
