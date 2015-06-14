@@ -22,25 +22,16 @@ class AddTripViewController: UIViewController {
 	@IBOutlet weak var endDateTextField: UITextField!
 	@IBOutlet weak var descriptionTextView: UITextView!
 
-	// Date handling properties
-	let dateFormat: NSDateFormatter = NSDateFormatter()
-	let datePicker: UIDatePicker = UIDatePicker()
-
-
 	// MARK: Methods
 
 	override func viewDidLoad() {
 
-		// Date format and date picker setup
-		dateFormat.dateStyle = NSDateFormatterStyle.ShortStyle
-		datePicker.datePickerMode = UIDatePickerMode.Date
-
 		// Add the event for the datepicker when the value is changed
-		datePicker.addTarget(self, action: Selector("updateDateField:"), forControlEvents: UIControlEvents.ValueChanged)
+		trip.datePicker.addTarget(self, action: Selector("updateDateField:"), forControlEvents: UIControlEvents.ValueChanged)
 
 		// Add the date picker as input view to the date text fields
-		startDateTextFiled.inputView = datePicker
-		endDateTextField.inputView = datePicker
+		startDateTextFiled.inputView = trip.datePicker
+		endDateTextField.inputView = trip.datePicker
 	}
 
 	@IBAction func saveTrip(sender: UIBarButtonItem) {
@@ -72,12 +63,11 @@ class AddTripViewController: UIViewController {
 		// Set the date to the textfield
 		if (startDateTextFiled.isFirstResponder()) {
 
-			startDateTextFiled.text = dateFormat.stringFromDate(sender.date)
+			startDateTextFiled.text = trip.dateFormat.stringFromDate(sender.date)
 
 		} else {
 
-			endDateTextField.text = dateFormat.stringFromDate(sender.date)
-
+			endDateTextField.text = trip.dateFormat.stringFromDate(sender.date)
 		}
 	}
 	

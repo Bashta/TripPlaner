@@ -17,4 +17,16 @@ struct Trip {
 	var endDate: String = ""
 	var objectID: String = ""
 
+	// Date handling properties
+	let dateFormat: NSDateFormatter = NSDateFormatter()
+	let datePicker: UIDatePicker = UIDatePicker()
+
+	init() {
+
+		// Date format and date picker setup
+		dateFormat.dateStyle = NSDateFormatterStyle.ShortStyle
+		datePicker.datePickerMode = UIDatePickerMode.Date
+
+	}
+	
 }
