@@ -10,15 +10,12 @@ import UIKit
 import Parse
 
 // TODO:
-//  1 - Refactor the date handling process inside the the Trip object (Add/EditVC Trip clases)
-//  2 - For every object create its own table which name corresponds to the user name since it is unique. This way the querry process should be way more efficent.
-//  3 - Bug #1
-//  4 - Implement pods where possible
-//  5 - Implement the User struct 
-//  6 - Move the extensions in a proper place
-//  7 - Implement a filter
-//  8 - Iplement Facebook log in 
-//  9 - Unit Tests
+//  1 - Implement the table where the trips are used in a more efficent way.
+//  2 - Bug #1
+//  3 - Implement pods where possible
+//  4 - Implement a filter
+//  5 - Iplement Facebook log in
+//  6 - Unit Tests
 
 // MARK: - Class
 class ViewController: UITableViewController, LogInViewControllerDelegate, SignUpViewControllerDelegate {
