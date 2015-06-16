@@ -8,14 +8,15 @@
 
 import UIKit
 import Parse
+import ParseFacebookUtils
+import MaryPopin
 
 // TODO:
 //  1 - Implement the table where the trips are used in a more efficent way.
-//  2 - Bug #1
-//  3 - Implement pods where possible
-//  4 - Implement a filter
-//  5 - Iplement Facebook log in
-//  6 - Unit Tests
+//  2 - Bug #1 Timer not showing after updating a post
+//  3 - Implement a filter
+//  4 - Iplement Facebook log in
+//  5 - Unit Tests
 
 // MARK: - Class
 class ViewController: UITableViewController, LogInViewControllerDelegate, SignUpViewControllerDelegate {
@@ -52,6 +53,10 @@ class ViewController: UITableViewController, LogInViewControllerDelegate, SignUp
 			fetchObjectsFromParseDatabase()
 
 		}
+	}
+
+	override func viewDidLoad() {
+
 	}
 
 	// MARK: - LogIn Delegate Methods
@@ -92,12 +97,34 @@ class ViewController: UITableViewController, LogInViewControllerDelegate, SignUp
 	func onSignUpWithFacebookButtonPressed(signUpViewController: SignUpViewController) {
 
 		//To be implemented
-
+		// Set permissions required from the facebook user account
+		//NSArray *permissionsArray = @[ @"user_about_me", @"user_relationships", @"user_birthday", @"user_location"];
+//		let permissions: Array = ["user_about_me", "user_relationships", "user_birthday", "user_location"]
+//		PFFacebookUtils.logInWithPermissions(permissions, block: { (user, error) -> Void in
+//			if (error == nil) {
+//
+//
+//			} else {
+//
+//			}
+//		})
+//
 	}
 
 	func onFacebookLoginButtonPressed(loginViewController: LogInViewController) {
 
-		//To be implemented
+		//Set permissions required from the facebook user account
+	   let permissions: Array = ["user_about_me", "user_relationships", "user_birthday", "user_location"]
+
+		PFFacebookUtils.logInWithPermissions(permissions, block: { (user, error) -> Void in
+					if (error == nil) {
+		
+		
+					} else {
+		
+					}
+				})
+
 
 	}
 

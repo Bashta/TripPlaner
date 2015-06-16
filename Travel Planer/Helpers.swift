@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 01Logic. All rights reserved.
 //
 
+import Foundation
+
 // MARK: - Heper extensions
 
 // String extension to veryfy if a strin is a valid email adress. Not written by me. The solution was fount on Stack Overflow.

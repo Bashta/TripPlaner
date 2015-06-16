@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		650172501B20D5B900B4A5C0 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6501724F1B20D5B900B4A5C0 /* Crashlytics.framework */; };
+		0FB4860CA32798256105C082 /* Pods_Travel_Planer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D548FB329D02CA8AC66180C9 /* Pods_Travel_Planer.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6501725A1B217F0D00B4A5C0 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650172591B217F0D00B4A5C0 /* MainTableViewCell.swift */; };
 		6501725C1B21C5D000B4A5C0 /* AddTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6501725B1B21C5D000B4A5C0 /* AddTripViewController.swift */; };
-		6512838F1B21D3B2001100A5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6512838D1B21D3B2001100A5 /* Bolts.framework */; };
-		651283901B21D3B2001100A5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6512838E1B21D3B2001100A5 /* Parse.framework */; };
 		657A5B3B1B276AD300387574 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657A5B3A1B276AD300387574 /* SignUpViewController.swift */; };
 		657D68F31B1E8FA20000C139 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657D68F21B1E8FA20000C139 /* AppDelegate.swift */; };
 		657D68F81B1E8FA20000C139 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657D68F61B1E8FA20000C139 /* Main.storyboard */; };
@@ -32,7 +30,10 @@
 		657D69361B1EC6A10000C139 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657D69351B1EC6A10000C139 /* Trip.swift */; };
 		657D69381B1ECA180000C139 /* LogInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 657D69371B1ECA180000C139 /* LogInView.xib */; };
 		657D693A1B1EE1950000C139 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657D69391B1EE1950000C139 /* LogInViewController.swift */; };
-		65C648241B2078C4009B539F /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C648231B2078C4009B539F /* Crashlytics.framework */; };
+		659FBD2A1B2F4D3900B531AA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659FBD241B2F4D3900B531AA /* Bolts.framework */; };
+		659FBD2B1B2F4D3900B531AA /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659FBD251B2F4D3900B531AA /* Crashlytics.framework */; };
+		659FBD2C1B2F4D3900B531AA /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659FBD261B2F4D3900B531AA /* FBSDKCoreKit.framework */; };
+		659FBD311B2F523600B531AA /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659FBD291B2F4D3900B531AA /* Parse.framework */; };
 		65C7CC491B2C52CC00C72D05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C7CC481B2C52CC00C72D05 /* ViewController.swift */; };
 		65C7CC4C1B2C52E200C72D05 /* UIViewController+MaryPopin.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C7CC4B1B2C52E200C72D05 /* UIViewController+MaryPopin.m */; };
 		65C7CC4E1B2C531E00C72D05 /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65C7CC4D1B2C531E00C72D05 /* SignUpView.xib */; };
@@ -51,11 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6501724F1B20D5B900B4A5C0 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		650172591B217F0D00B4A5C0 /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTableViewCell.swift; path = Controller/MainTableViewCell.swift; sourceTree = "<group>"; };
 		6501725B1B21C5D000B4A5C0 /* AddTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddTripViewController.swift; path = Controller/AddTripViewController.swift; sourceTree = "<group>"; };
-		6512838D1B21D3B2001100A5 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Frameworks/Bolts.framework; sourceTree = "<group>"; };
-		6512838E1B21D3B2001100A5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Frameworks/Parse.framework; sourceTree = "<group>"; };
 		657A5B3A1B276AD300387574 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = Controller/SignUpViewController.swift; sourceTree = "<group>"; };
 		657D68ED1B1E8FA20000C139 /* Travel Planer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Travel Planer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		657D68F11B1E8FA20000C139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,14 +78,22 @@
 		657D69351B1EC6A10000C139 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Trip.swift; path = Model/Trip.swift; sourceTree = "<group>"; };
 		657D69371B1ECA180000C139 /* LogInView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LogInView.xib; path = View/LogInView.xib; sourceTree = "<group>"; };
 		657D69391B1EE1950000C139 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogInViewController.swift; path = Controller/LogInViewController.swift; sourceTree = "<group>"; };
-		657D693E1B1EF5460000C139 /* Travel Planer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Travel Planer-Bridging-Header.h"; sourceTree = "<group>"; };
-		65C648231B2078C4009B539F /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Frameworks/Crashlytics.framework; sourceTree = "<group>"; };
+		659FBD211B2F4A5B00B531AA /* BH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BH.h; sourceTree = SOURCE_ROOT; };
+		659FBD241B2F4D3900B531AA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Frameworks/Bolts.framework; sourceTree = "<group>"; };
+		659FBD251B2F4D3900B531AA /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Frameworks/Crashlytics.framework; sourceTree = "<group>"; };
+		659FBD261B2F4D3900B531AA /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Frameworks/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		659FBD271B2F4D3900B531AA /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Frameworks/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		659FBD281B2F4D3900B531AA /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Frameworks/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		659FBD291B2F4D3900B531AA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Frameworks/Parse.framework; sourceTree = "<group>"; };
 		65C7CC481B2C52CC00C72D05 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controller/ViewController.swift; sourceTree = "<group>"; };
 		65C7CC4A1B2C52E200C72D05 /* UIViewController+MaryPopin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MaryPopin.h"; path = "Frameworks/UIViewController+MaryPopin.h"; sourceTree = "<group>"; };
 		65C7CC4B1B2C52E200C72D05 /* UIViewController+MaryPopin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MaryPopin.m"; path = "Frameworks/UIViewController+MaryPopin.m"; sourceTree = "<group>"; };
 		65C7CC4D1B2C531E00C72D05 /* SignUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SignUpView.xib; path = View/SignUpView.xib; sourceTree = "<group>"; };
 		65E067B11B2DED3E0045C4CC /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		65E2D26B1B263FB200225022 /* EditTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditTripViewController.swift; path = Controller/EditTripViewController.swift; sourceTree = "<group>"; };
+		8142C1558B312AE1E314F93A /* Pods-Travel Planer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travel Planer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Travel Planer/Pods-Travel Planer.release.xcconfig"; sourceTree = "<group>"; };
+		BA2FEB6EAB1253671ACFD7FF /* Pods-Travel Planer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travel Planer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Travel Planer/Pods-Travel Planer.debug.xcconfig"; sourceTree = "<group>"; };
+		D548FB329D02CA8AC66180C9 /* Pods_Travel_Planer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Travel_Planer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +101,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6512838F1B21D3B2001100A5 /* Bolts.framework in Frameworks */,
-				651283901B21D3B2001100A5 /* Parse.framework in Frameworks */,
-				650172501B20D5B900B4A5C0 /* Crashlytics.framework in Frameworks */,
-				65C648241B2078C4009B539F /* Crashlytics.framework in Frameworks */,
+				659FBD311B2F523600B531AA /* Parse.framework in Frameworks */,
+				659FBD2A1B2F4D3900B531AA /* Bolts.framework in Frameworks */,
+				659FBD2B1B2F4D3900B531AA /* Crashlytics.framework in Frameworks */,
+				659FBD2C1B2F4D3900B531AA /* FBSDKCoreKit.framework in Frameworks */,
 				657D692B1B1E91080000C139 /* SystemConfiguration.framework in Frameworks */,
 				657D69291B1E90FF0000C139 /* StoreKit.framework in Frameworks */,
 				657D69271B1E90F70000C139 /* Security.framework in Frameworks */,
@@ -110,6 +116,7 @@
 				657D691B1B1E90AF0000C139 /* AudioToolbox.framework in Frameworks */,
 				657D692D1B1E91120000C139 /* libz.dylib in Frameworks */,
 				657D692F1B1E91210000C139 /* libsqlite3.dylib in Frameworks */,
+				0FB4860CA32798256105C082 /* Pods_Travel_Planer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +137,7 @@
 				657D69051B1E8FA30000C139 /* Travel PlanerTests */,
 				657D68EE1B1E8FA20000C139 /* Products */,
 				657D69121B1E8FAE0000C139 /* Frameworks */,
+				C67061C6D194032AF35DB340 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,8 +166,8 @@
 		657D68F01B1E8FA20000C139 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				659FBD211B2F4A5B00B531AA /* BH.h */,
 				657D68F21B1E8FA20000C139 /* AppDelegate.swift */,
-				657D693E1B1EF5460000C139 /* Travel Planer-Bridging-Header.h */,
 				657D68F11B1E8FA20000C139 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -185,11 +193,13 @@
 		657D69121B1E8FAE0000C139 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6512838D1B21D3B2001100A5 /* Bolts.framework */,
-				6512838E1B21D3B2001100A5 /* Parse.framework */,
-				6501724F1B20D5B900B4A5C0 /* Crashlytics.framework */,
+				659FBD241B2F4D3900B531AA /* Bolts.framework */,
+				659FBD251B2F4D3900B531AA /* Crashlytics.framework */,
+				659FBD261B2F4D3900B531AA /* FBSDKCoreKit.framework */,
+				659FBD271B2F4D3900B531AA /* FBSDKLoginKit.framework */,
+				659FBD281B2F4D3900B531AA /* FBSDKShareKit.framework */,
+				659FBD291B2F4D3900B531AA /* Parse.framework */,
 				657D693D1B1EF52F0000C139 /* MaryPopin */,
-				65C648231B2078C4009B539F /* Crashlytics.framework */,
 				657D692E1B1E91210000C139 /* libsqlite3.dylib */,
 				657D692C1B1E91120000C139 /* libz.dylib */,
 				657D692A1B1E91080000C139 /* SystemConfiguration.framework */,
@@ -201,6 +211,7 @@
 				657D691E1B1E90BF0000C139 /* CoreGraphics.framework */,
 				657D691C1B1E90B60000C139 /* CFNetwork.framework */,
 				657D691A1B1E90AF0000C139 /* AudioToolbox.framework */,
+				D548FB329D02CA8AC66180C9 /* Pods_Travel_Planer.framework */,
 			);
 			name = Frameworks;
 			path = "Travel Planer";
@@ -255,6 +266,15 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
+		C67061C6D194032AF35DB340 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA2FEB6EAB1253671ACFD7FF /* Pods-Travel Planer.debug.xcconfig */,
+				8142C1558B312AE1E314F93A /* Pods-Travel Planer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -262,10 +282,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 657D690C1B1E8FA30000C139 /* Build configuration list for PBXNativeTarget "Travel Planer" */;
 			buildPhases = (
+				AB29D6BD56BB9ED8DEE053A7 /* Check Pods Manifest.lock */,
 				657D68E91B1E8FA20000C139 /* Sources */,
 				657D68EA1B1E8FA20000C139 /* Frameworks */,
 				657D68EB1B1E8FA20000C139 /* Resources */,
 				657D69301B1E978C0000C139 /* ShellScript */,
+				5C4D65F1D787333EF79B9120 /* Embed Pods Frameworks */,
+				2D08CC1C2733B605FA3D2757 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -354,6 +377,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2D08CC1C2733B605FA3D2757 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Travel Planer/Pods-Travel Planer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C4D65F1D787333EF79B9120 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Travel Planer/Pods-Travel Planer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		657D69301B1E978C0000C139 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -365,7 +418,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./Crashlytics.framework/run 9f18d825f4d4e77735b5bc9e3bed78959c905ec4 67479f1753bc429107cdd6a2bc0e5b982b6d5eb0834833cf08e30e33e4c684dd";
+			shellScript = "./Pods/CrashlyticsFramework/Crashlytics.framework/run 9f18d825f4d4e77735b5bc9e3bed78959c905ec4 67479f1753bc429107cdd6a2bc0e5b982b6d5eb0834833cf08e30e33e4c684dd";
+		};
+		AB29D6BD56BB9ED8DEE053A7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -446,6 +514,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -469,6 +538,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = BH.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -495,6 +565,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -510,61 +582,48 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = BH.h;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		657D690D1B1E8FA30000C139 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA2FEB6EAB1253671ACFD7FF /* Pods-Travel Planer.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Travel",
-					"$(SRCROOT)/**",
-					"Planer/Frameworks/**",
-					"$(PROJECT_DIR)/Travel/**",
-					"Planer/Frameworks/**",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)/**";
 				INFOPLIST_FILE = "Travel Planer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Travel Planer/Travel Planer-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = BH.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		657D690E1B1E8FA30000C139 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8142C1558B312AE1E314F93A /* Pods-Travel Planer.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Travel",
-					"$(SRCROOT)/**",
-					"Planer/Frameworks/**",
-					"$(PROJECT_DIR)/Travel/**",
-					"Planer/Frameworks/**",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)/**";
 				INFOPLIST_FILE = "Travel Planer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Travel Planer/Travel Planer-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = BH.h;
 			};
 			name = Release;
 		};
 		657D69101B1E8FA30000C139 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -579,11 +638,9 @@
 		657D69111B1E8FA30000C139 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = "Travel PlanerTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
