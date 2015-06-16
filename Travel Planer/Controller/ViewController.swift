@@ -8,15 +8,14 @@
 
 import UIKit
 import Parse
-import ParseFacebookUtils
+//import ParseFacebookUtils
 import MaryPopin
 
 // TODO:
 //  1 - Implement the table where the trips are used in a more efficent way.
 //  2 - Bug #1 Timer not showing after updating a post
 //  3 - Implement a filter
-//  4 - Iplement Facebook log in
-//  5 - Unit Tests
+//  4 - Unit Tests
 
 // MARK: - Class
 class ViewController: UITableViewController, LogInViewControllerDelegate, SignUpViewControllerDelegate {
@@ -35,6 +34,7 @@ class ViewController: UITableViewController, LogInViewControllerDelegate, SignUp
 	//NSCaledear
 	var calendar: NSCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
 
+	// MARK: - UIViewController Methods
 	override func viewDidAppear(animated: Bool) {
 
 		//Check if there is already a user signed in
@@ -59,7 +59,7 @@ class ViewController: UITableViewController, LogInViewControllerDelegate, SignUp
 
 	}
 
-	// MARK: - LogIn Delegate Methods
+	// MARK: - LogIn/ Sign Up Delegate Methods
 
 	func onRegisterButtonPressed(loginViewController : LogInViewController) {
 
@@ -91,40 +91,25 @@ class ViewController: UITableViewController, LogInViewControllerDelegate, SignUp
 		self.dismissCurrentPopinControllerAnimated(true, completion: nil)
 
 		//Update the tableviw data that might have been there from another user
-		fetchObjectsFromParseDatabase() // in case the
+		fetchObjectsFromParseDatabase()
 	}
 
 	func onSignUpWithFacebookButtonPressed(signUpViewController: SignUpViewController) {
 
-		//To be implemented
-		// Set permissions required from the facebook user account
-		//NSArray *permissionsArray = @[ @"user_about_me", @"user_relationships", @"user_birthday", @"user_location"];
-//		let permissions: Array = ["user_about_me", "user_relationships", "user_birthday", "user_location"]
-//		PFFacebookUtils.logInWithPermissions(permissions, block: { (user, error) -> Void in
-//			if (error == nil) {
-//
-//
-//			} else {
-//
-//			}
-//		})
-//
+		//Dismiss the view after a successfull log in was handled by the sign up VC
+		self.dismissCurrentPopinControllerAnimated(true)
+
+		//Update the tableviw data that might have been there from another user
+		fetchObjectsFromParseDatabase()
 	}
 
 	func onFacebookLoginButtonPressed(loginViewController: LogInViewController) {
 
-		//Set permissions required from the facebook user account
-	   let permissions: Array = ["user_about_me", "user_relationships", "user_birthday", "user_location"]
+		//Dismiss the view after a successfull log in was handled by the sign up VC
+		self.dismissCurrentPopinControllerAnimated(true)
 
-		PFFacebookUtils.logInWithPermissions(permissions, block: { (user, error) -> Void in
-					if (error == nil) {
-		
-		
-					} else {
-		
-					}
-				})
-
+		//Update the tableviw data that might have been there from another user
+		fetchObjectsFromParseDatabase()
 
 	}
 

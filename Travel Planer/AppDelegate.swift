@@ -11,6 +11,7 @@ import Parse
 import Bolts
 import Crashlytics
 import FBSDKCoreKit
+import ParseFacebookUtils
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,13 +25,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// Parse setup
 		Parse.enableLocalDatastore()
 
-		Parse.setApplicationId("f9bdwsZSlu7kK9FL8jKHVAF5xRGv0MddhHHeTymt",
-			clientKey: "dIauWIdfExq9NZhcVJoDBhZZbYGvsEu2yCrYySSw")
+		Parse.setApplicationId(GlobalConstants.PARSE_APP_ID,
+			clientKey: GlobalConstants.PARSE_CLIENT_KEY)
+
+		PFFacebookUtils.initializeFacebook()
 
 		// Crashlytics setup
-		Crashlytics.startWithAPIKey("9f18d825f4d4e77735b5bc9e3bed78959c905ec4")
+		Crashlytics.startWithAPIKey(GlobalConstants.CRASHLYTICS_API_KEY)
 
-		// Override point for customization after application launch.
+
 		return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
 	}
 

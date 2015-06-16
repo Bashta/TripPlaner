@@ -34,6 +34,7 @@
 		659FBD2B1B2F4D3900B531AA /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659FBD251B2F4D3900B531AA /* Crashlytics.framework */; };
 		659FBD2C1B2F4D3900B531AA /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659FBD261B2F4D3900B531AA /* FBSDKCoreKit.framework */; };
 		659FBD311B2F523600B531AA /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659FBD291B2F4D3900B531AA /* Parse.framework */; };
+		65B50BD91B309F27000E3D97 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B50BD81B309F27000E3D97 /* Constants.swift */; };
 		65C7CC491B2C52CC00C72D05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C7CC481B2C52CC00C72D05 /* ViewController.swift */; };
 		65C7CC4C1B2C52E200C72D05 /* UIViewController+MaryPopin.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C7CC4B1B2C52E200C72D05 /* UIViewController+MaryPopin.m */; };
 		65C7CC4E1B2C531E00C72D05 /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65C7CC4D1B2C531E00C72D05 /* SignUpView.xib */; };
@@ -85,6 +86,7 @@
 		659FBD271B2F4D3900B531AA /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Frameworks/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		659FBD281B2F4D3900B531AA /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Frameworks/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		659FBD291B2F4D3900B531AA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Frameworks/Parse.framework; sourceTree = "<group>"; };
+		65B50BD81B309F27000E3D97 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		65C7CC481B2C52CC00C72D05 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controller/ViewController.swift; sourceTree = "<group>"; };
 		65C7CC4A1B2C52E200C72D05 /* UIViewController+MaryPopin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MaryPopin.h"; path = "Frameworks/UIViewController+MaryPopin.h"; sourceTree = "<group>"; };
 		65C7CC4B1B2C52E200C72D05 /* UIViewController+MaryPopin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MaryPopin.m"; path = "Frameworks/UIViewController+MaryPopin.m"; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				65E067B11B2DED3E0045C4CC /* Helpers.swift */,
+				65B50BD81B309F27000E3D97 /* Constants.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6501725A1B217F0D00B4A5C0 /* MainTableViewCell.swift in Sources */,
+				65B50BD91B309F27000E3D97 /* Constants.swift in Sources */,
 				657D693A1B1EE1950000C139 /* LogInViewController.swift in Sources */,
 				657D69361B1EC6A10000C139 /* Trip.swift in Sources */,
 				65E067B21B2DED3E0045C4CC /* Helpers.swift in Sources */,

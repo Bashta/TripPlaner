@@ -8,6 +8,7 @@
 
 import Parse
 import UIKit
+import ParseFacebookUtils
 
 // MARK: Protocol
 protocol SignUpViewControllerDelegate {
@@ -87,6 +88,26 @@ class SignUpViewController: UIViewController {
 
 	@IBAction func signUpWithFacebookButtonPressed(sender: UIButton) {
 
+		//Set permissions required from the facebook user account
+		let permissions: Array = ["email", "public_profile"]
+
+		PFFacebookUtils.logInWithPermissions(permissions, block: { (user, error) -> Void in
+
+			if (user == nil) {
+
+				//Do nothing! The log in view will not be dismmised
+
+			} else if (user!.isNew) {
+
+				self.delegate?.onSignUpWithFacebookButtonPressed(self)
+
+			} else {
+
+				self.delegate?.onSignUpWithFacebookButtonPressed(self)
+				
+			}
+			
+		})
 	}
 	
 }
